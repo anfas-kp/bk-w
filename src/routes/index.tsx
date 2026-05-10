@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-export const Route = createFileRoute("/")({\r
+export const Route = createFileRoute("/")({
   component: Index,
 });
 
