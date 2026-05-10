@@ -63,7 +63,7 @@ Vercel is the easiest platform for React and TanStack projects.
 2. Vercel should automatically detect **TanStack Start** or **Vite**.
 3. **Settings:**
    - **Build Command:** `npm run build`
-   - **Output Directory:** `.output/public`
+   - **Output Directory:** `dist/client`
 4. Click **Deploy**.
 
 ---
