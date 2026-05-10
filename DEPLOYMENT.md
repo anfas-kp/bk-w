@@ -6,7 +6,7 @@ This document provides comprehensive instructions for deploying the **Zlaqa AI**
 
 Before deploying, ensure your environment is set up correctly. The project uses **Vite** and **TanStack Start** with a custom build script that handles asset migration.
 
-- **Build Command:** `npm run build`
+- **Build Command:** `npm install && npm run build`
 - **Output Directory:** `.output` (Standard for TanStack Start) or `dist` (if configured as static).
 - **Node Version:** 20.x or higher is recommended.
 
@@ -23,7 +23,7 @@ Since the project includes a `wrangler.jsonc` and uses the `@cloudflare/vite-plu
 4. Select your repository.
 5. **Build Settings:**
    - **Framework Preset:** `None` (or `Vite` if available).
-   - **Build command:** `npm run build`
+   - **Build command:** `npm install && npm run build`
    - **Build output directory:** `dist/client`
 6. **Environment Variables:**
    - Add `NODE_VERSION`: `20`
@@ -39,7 +39,7 @@ To deploy on Render, you can use the **Static Site** or **Web Service** (if usin
 1. Create a new **Static Site** on Render.
 2. Connect your GitHub repository.
 3. **Settings:**
-   - **Build Command:** `npm run build`
+   - **Build Command:** `npm install && npm run build`
    - **Publish Directory:** `dist/client`
 4. Deploy.
 
@@ -49,7 +49,7 @@ This project includes a `render.yaml` for automatic configuration.
 2. Render will detect the `render.yaml` and configure the service automatically.
 3. Alternatively, create a new **Web Service** manually:
    - **Runtime:** `Node`
-   - **Build Command:** `npm run build`
+   - **Build Command:** `npm install && npm run build`
    - **Start Command:** `node dist/server/index.js`
 4. Deploy.
 
